@@ -24,8 +24,9 @@ if cond == "solve":
     #print('Inverse of Matrix A is:\n\n', X)
 
 elif cond == "inverse":
-    preA = input('Enter original matrix:')
-    inverse = np.linalg.inv(preA)
+    preA = input('Enter original matrix: ')
+    A = np.matrix(preA)
+    inverse = np.linalg.inv(A)
     print('Inverse of Matrix A is:\n\n', inverse)
 
 else:
